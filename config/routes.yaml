@@ -3,7 +3,7 @@ index:
     controller: DefaultController::indexAction
     methods:    GET
 
-category:
-    path:       /category
-    controller: DefaultController::categoryAction
+error404:
+    path:       /error_404
+    controller: ErrorController::error404Action
     methods:    GET

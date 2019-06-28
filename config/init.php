@@ -11,7 +11,7 @@ define("CONFIG", ROOT . '/config');
 
 define("LAYOUT", 'default');
 
-// http://mvc/public/index.php
+
 $appPath = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}";
 $appPath = preg_replace("#[^/]+$#", '', $appPath);
 $appPath = str_replace('/public/', '', $appPath);

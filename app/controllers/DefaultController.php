@@ -16,8 +16,4 @@ class DefaultController extends MainController
         var_dump(123);
     }
 
-    public function categoryAction()
-    {
-        var_dump(456);
-    }
 }
