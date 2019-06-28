@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "mvc\\": "vendor/mvc/core",
+            "app\\": "app"
+        }
+    },
+
+    "require": {
+        "symfony/routing": "^4.2",
+        "symfony/config": "^4.2",
+        "symfony/yaml": "^4.2"
+    }
+}

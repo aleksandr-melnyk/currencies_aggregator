@@ -1,0 +1,9 @@
+index:
+    path:       /
+    controller: DefaultController::indexAction
+    methods:    GET
+
+category:
+    path:       /category
+    controller: DefaultController::categoryAction
+    methods:    GET
