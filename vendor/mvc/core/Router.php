@@ -34,15 +34,15 @@ class Router
     {
         $context = new RequestContext('/');
         $matcher = new UrlMatcher($this->routes, $context);
-        try{
+//        try{
             $parameters = $matcher->match('/' . $this->request);
             $parts = explode(':', $parameters['_controller']);
             $controllerPath = 'app\controllers\\' . $parts[0];
             $controller = new $controllerPath();
             $action  = $parts[2];
             $controller->$action();
-        }catch (\Exception $e){
-            header('Location: /error_404');
-        }
+//        }catch (\Exception $e){
+//            header('Location: /error_404');
+//        }
     }
 }

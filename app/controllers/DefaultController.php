@@ -9,11 +9,17 @@
 namespace app\controllers;
 
 
+use app\models\api\MonobankApi;
+use app\models\api\NbuApi;
+
+
 class DefaultController extends MainController
 {
     public function indexAction()
     {
-        var_dump(123);
+        $privatApi = new MonobankApi();
+        $data = $privatApi->prepareDataForUser();
+        dump($data);
     }
 
 }
